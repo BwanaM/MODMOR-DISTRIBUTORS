@@ -90,3 +90,47 @@ function initMobileNavigation() {
 
     console.log('Mobile navigation initialized successfully');
 }
+
+// Auto-update dates function
+function updateAllDates() {
+    // Update copyright year
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.querySelector('.footer-bottom p');
+    
+    if (copyrightElement) {
+        // Replace any year pattern (2023, 2024, 2025, etc.)
+        copyrightElement.innerHTML = copyrightElement.innerHTML.replace(/\b20\d{2}\b/, currentYear);
+        console.log('Copyright year updated to:', currentYear);
+    }
+
+    // Update last updated date in compliance section
+    const lastUpdatedElements = document.querySelectorAll('.compliance-intro p');
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+    
+    lastUpdatedElements.forEach(element => {
+        if (element.textContent.includes('Last updated') || element.textContent.includes('Last Updated')) {
+            element.textContent = `Last updated: ${formattedDate}`;
+            console.log('Last updated date set to:', formattedDate);
+        }
+    });
+
+    // Update any other date elements
+    const dateElements = document.querySelectorAll('[data-auto-update-date]');
+    dateElements.forEach(element => {
+        element.textContent = formattedDate;
+    });
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Initializing date updates...');
+    updateAllDates();
+    
+    // Also update dates when page fully loads (in case of dynamic content)
+    window.addEventListener('load', function() {
+        console.log('Page fully loaded - updating dates');
+        updateAllDates();
+    });
+});

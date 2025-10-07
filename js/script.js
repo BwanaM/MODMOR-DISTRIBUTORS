@@ -309,3 +309,13 @@ document.addEventListener('DOMContentLoaded', function() {
     updateLastUpdatedDate();
     updateCopyrightYear(); // Make sure this function exists for copyright year
 });
+
+// Add scroll effect to navbar for enhanced floating appearance
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});

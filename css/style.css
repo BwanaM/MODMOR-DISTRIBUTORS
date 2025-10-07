@@ -27,6 +27,9 @@ body {
     color: var(--text-color);
     background-color: var(--white);
 }
+body.no-scroll{
+    overflow: hidden;
+}
 
 .container {
     max-width: 1200px;
@@ -222,6 +225,9 @@ p {
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: var(--shadow);
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
 }
 
 .bar {
@@ -841,12 +847,16 @@ footer {
         box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
         border-left: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 0;
-        transition: var(--transition);
+        transition: right 0.3s ease;
         gap: 0.5rem;
+        z-index: 999;
     }
 
     .nav-menu.active {
         right: 0;
+    }
+    .hamburger {
+        display: flex !important;
     }
 
     .nav-item {

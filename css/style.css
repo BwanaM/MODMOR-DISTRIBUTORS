@@ -788,6 +788,35 @@ footer {
     text-align: center;
 }
 
+/* Mobile Logo Styles */
+.mobile-logo-item {
+    display: none;
+}
+
+.mobile-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+}
+
+.mobile-logo img {
+    height: 40px;
+    margin-right: 12px;
+    border-radius: 8px;
+}
+
+.mobile-logo span {
+    font-weight: 800;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Safe area insets for modern mobile devices */
 @supports(padding: max(0px)) {
     .container {
@@ -948,6 +977,22 @@ footer {
     .cta {
         padding: 60px 0;
     }
+}
+
+/* Show mobile logo only on mobile */
+@media (max-width: 768px) {
+    .mobile-logo-item {
+        display: block;
+    }
+    
+    .nav-menu {
+        padding: 20px 2rem 2rem !important; /* More padding at top for logo */
+    }
+    
+    /* Hide the main logo on mobile if you want */
+    /* .nav-logo span {
+        display: none;
+    } */
 }
 
 /* Mobile */

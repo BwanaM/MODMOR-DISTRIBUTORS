@@ -3,8 +3,10 @@ console.log('Script loaded - starting initialization');
 
 // Wait for DOM to be fully ready
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded - initializing mobile navigation');
+    console.log('DOM loaded - initializing all features');
     initMobileNavigation();
+    initNavigationHighlighting();
+    initDateUpdates();
 });
 
 function initMobileNavigation() {
@@ -91,7 +93,61 @@ function initMobileNavigation() {
     console.log('Mobile navigation initialized successfully');
 }
 
+// Navigation highlighting function
+function initNavigationHighlighting() {
+    console.log('Initializing navigation highlighting...');
+    
+    function setActivePage() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        // Only target navigation links inside .nav-item to exclude the logo
+        const navLinks = document.querySelectorAll('.nav-item .nav-link');
+        
+        console.log('Current page:', currentPage);
+        console.log('Navigation links found:', navLinks.length);
+        
+        // Remove active class from all navigation links
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // Add active class to current page link
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            console.log('Checking link:', linkHref);
+            
+            if (linkHref === currentPage) {
+                link.classList.add('active');
+                console.log('Active link set to:', linkHref);
+            }
+            
+            // Special handling for home page
+            if (currentPage === '' || currentPage === 'index.html' && linkHref === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    // Set active page on load
+    setActivePage();
+    
+    // Update active page when navigating (for single page app behavior if needed)
+    window.addEventListener('popstate', setActivePage);
+    
+    console.log('Navigation highlighting initialized');
+}
+
 // Auto-update dates function
+function initDateUpdates() {
+    console.log('Initializing date updates...');
+    updateAllDates();
+    
+    // Also update dates when page fully loads (in case of dynamic content)
+    window.addEventListener('load', function() {
+        console.log('Page fully loaded - updating dates');
+        updateAllDates();
+    });
+}
+
 function updateAllDates() {
     // Update copyright year
     const currentYear = new Date().getFullYear();
@@ -123,14 +179,25 @@ function updateAllDates() {
     });
 }
 
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Initializing date updates...');
-    updateAllDates();
-    
-    // Also update dates when page fully loads (in case of dynamic content)
-    window.addEventListener('load', function() {
-        console.log('Page fully loaded - updating dates');
-        updateAllDates();
+// Optional: Add smooth scrolling for anchor links
+function initSmoothScrolling() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            
+            if (href !== '#' && href !== '') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
     });
-});
+}
+
+// Optional: Add this if you want smooth scrolling
+// document.addEventListener('DOMContentLoaded', initSmoothScrolling);

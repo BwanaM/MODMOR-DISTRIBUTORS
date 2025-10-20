@@ -198,7 +198,6 @@ function initSmoothScrolling() {
         });
     });
 }
-
 // Optional: Add this if you want smooth scrolling
 // document.addEventListener('DOMContentLoaded', initSmoothScrolling);
 // Add this to your JavaScript
@@ -209,4 +208,12 @@ window.addEventListener('scroll', function() {
     } else {
         navbar.classList.remove('scrolled');
     }
+});
+// Scroll progress indicator
+window.addEventListener('scroll', function() {
+    const winHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+    const scrollTop = window.pageYOffset;
+    const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+    document.querySelector('.scroll-progress').style.width = scrollPercent + '%';
 });

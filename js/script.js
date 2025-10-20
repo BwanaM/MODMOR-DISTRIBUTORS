@@ -201,3 +201,12 @@ function initSmoothScrolling() {
 
 // Optional: Add this if you want smooth scrolling
 // document.addEventListener('DOMContentLoaded', initSmoothScrolling);
+// Add this to your JavaScript
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});

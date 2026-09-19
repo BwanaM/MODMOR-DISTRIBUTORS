@@ -53,16 +53,17 @@
             "contactType": "Customer Service",
             "email": "sales@modmordistributors.com"
         },
-        "sameAs": [
-            "https://wa.me/260953576969"
-        ]
+        "sameAs": ["https://wa.me/260953576969"]
     }
     </script>
 </head>
 
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="nav-container">
                 <a href="index.html" class="nav-logo">
                     <img src="images/logo.png" alt="MODMOR DISTRIBUTORS LTD Logo" style="height: 50px;" loading="lazy">
@@ -76,13 +77,13 @@
                         </a>
                     </li>
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" aria-current="page">About Us</a></li>
                     <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="compliance.html" class="nav-link">Compliance</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-                <div class="hamburger">
+                <div class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -91,65 +92,166 @@
         </nav>
     </header>
 
+    <!-- Page Header with breadcrumbs -->
     <section class="page-header">
         <div class="container">
-            <h1>About MODMOR DISTRIBUTORS </h1>
-            <p>Zambia's Trusted Wholesale Distribution Partner</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span class="sep">/</span>
+                <span class="current">About Us</span>
+            </div>
+            <h1>About MODMOR DISTRIBUTORS</h1>
+            <p>Zambia's trusted wholesale distribution partner — built on integrity, versatility, and reliability.</p>
         </div>
     </section>
 
     <section class="about-content">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>Who We Are</h2>
-                    <p>MODMOR DISTRIBUTORS LIMITED is a dynamic and reliable wholesale distribution partner based in Zambia. Founded on the principles of versatility and integrity, we are officially registered to provide a vast array of high-quality products to businesses, government institutions, and organizations nationwide.</p>
+
+            <!-- About Intro Grid -->
+            <div class="about-hero-grid">
+                <div class="about-text reveal">
+                    <span class="eyebrow" style="display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--secondary-color);margin-bottom:.75rem;">Who We Are</span>
+                    <h2>A Dynamic Wholesale Partner for Zambia</h2>
+                    <p class="about-lead">MODMOR DISTRIBUTORS LIMITED is a dynamic and reliable wholesale distribution partner based in Zambia. Founded on the principles of versatility and integrity, we are officially registered to provide a vast array of high-quality products to businesses, government institutions, and organizations nationwide.</p>
+
                     <h3>Our Mission</h3>
-                    <p>To simplify procurement and empower our clients' success by being their one-stop shop for everything from construction materials and healthcare supplies to laboratory equipment and general goods. We don't just deliver products; we deliver solutions, reliability, and peace of mind.</p>
+                    <p class="about-lead">To simplify procurement and empower our clients' success by being their one-stop shop for everything from construction materials and healthcare supplies to laboratory equipment and general goods. We don't just deliver products — we deliver solutions, reliability, and peace of mind.</p>
+
+                    <!-- Stats strip -->
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="num">3</span>
+                            <span class="lbl">Branch Offices</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="num">10+</span>
+                            <span class="lbl">Provinces Served</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="num">100%</span>
+                            <span class="lbl">Compliance</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- Uncomment and optimize image when available
-                <div class="about-image">
-                    <img src="images/team.jpg" alt="MODMOR DISTRIBUTORS LTD Team in Zambia" style="width: 100%; border-radius: 10px;" loading="lazy">
-                </div> -->
+
+                <!-- About visual / image slot -->
+                <div class="about-image reveal">
+                    <!--
+                        👇 REPLACE the placeholder below with your real team/warehouse photo:
+                        <img src="images/team.jpg" alt="MODMOR Distributors team in Zambia" loading="lazy">
+                    -->
+                    <div class="about-image-placeholder">
+                        <i class="fas fa-warehouse" aria-hidden="true"></i>
+                        <div class="label">Since Day One</div>
+                        <div class="sub">Serving Zambia's Businesses</div>
+                    </div>
+                </div>
             </div>
 
+            <!-- Mission Cards -->
+            <div class="mission-grid">
+                <article class="mission-card reveal">
+                    <div class="icon-badge"><i class="fas fa-bullseye"></i></div>
+                    <h4>Our Mission</h4>
+                    <p>To be Zambia's most dependable single-source supplier — simplifying procurement for every client we serve.</p>
+                </article>
+                <article class="mission-card reveal">
+                    <div class="icon-badge"><i class="fas fa-eye"></i></div>
+                    <h4>Our Vision</h4>
+                    <p>To lead wholesale distribution in Zambia through innovation, certified quality, and unmatched customer care.</p>
+                </article>
+                <article class="mission-card reveal">
+                    <div class="icon-badge"><i class="fas fa-gem"></i></div>
+                    <h4>Our Promise</h4>
+                    <p>Every order — big or small — handled with integrity, delivered on time, and backed by real support.</p>
+                </article>
+            </div>
+
+            <!-- Values Section -->
             <div class="values-section">
-                <h2>Our Core Values</h2>
+                <div class="section-head reveal">
+                    <span class="eyebrow">Core Values</span>
+                    <h2>What Drives Us Every Day</h2>
+                    <p>Four principles that shape every order, every delivery, and every relationship we build.</p>
+                </div>
                 <div class="values-grid">
-                    <div class="value-card">
+                    <div class="value-card reveal">
                         <i class="fas fa-sync-alt"></i>
                         <h4>Versatility</h4>
                         <p>Our license allows us to adapt to your unique and changing needs.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="value-card reveal">
                         <i class="fas fa-handshake"></i>
                         <h4>Reliability</h4>
                         <p>You can count on us for consistent quality and on-time delivery.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="value-card reveal">
                         <i class="fas fa-balance-scale"></i>
                         <h4>Integrity</h4>
                         <p>We build trust through honest communication and ethical practices.</p>
                     </div>
-                    <div class="value-card">
+                    <div class="value-card reveal">
                         <i class="fas fa-users"></i>
                         <h4>Partnership</h4>
                         <p>Your goals are our priorities. We are invested in your success.</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Timeline / Journey -->
+            <div class="timeline-section">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Our Journey</span>
+                    <h2>Growing With Zambia</h2>
+                    <p>From a single Lusaka operation to a nationwide distribution network.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="year">Foundation</span>
+                        <h4>MODMOR is Established</h4>
+                        <p>Registered with PACRA and launched with a mission to simplify procurement for Zambian businesses.</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="year">Expansion</span>
+                        <h4>ZPPA Certification &amp; Nationwide Reach</h4>
+                        <p>Achieved ZPPA registration, opening doors to public sector supply and expanding beyond Lusaka.</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="year">Growth</span>
+                        <h4>Chinsali &amp; Kasama Branches</h4>
+                        <p>Opened regional branches to bring quality products closer to clients in Northern and Muchinga provinces.</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="year">Today</span>
+                        <h4>Trusted by Businesses Nationwide</h4>
+                        <p>Serving construction, healthcare, laboratory, education, and government clients across Zambia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="cta-banner reveal">
+                <h2>Ready to Work With Us?</h2>
+                <p>Whether you need one item or a full procurement plan, our team is ready to help.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Today <i class="fas fa-arrow-right"></i></a>
+            </div>
+
         </div>
     </section>
 
-    <section class="ad-unit">
+    <!-- AdSense Ad Unit -->
+    <section class="ad-unit" aria-hidden="true">
         <div class="container">
             <div class="ad-space">
-                <!-- Google AdSense Code -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4252166289270815" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -158,22 +260,12 @@
                     <div class="certifications">
                         <h4>Our Certifications</h4>
                         <div class="certification-badges">
-                            <div class="certification-item">
-                                <i class="fas fa-certificate"></i>
-                                <span>PACRA Registered</span>
-                            </div>
-                            <div class="certification-item">
-                                <i class="fas fa-certificate"></i>
-                                <span>ZRA Compliant</span>
-                            </div>
-                            <div class="certification-item">
-                                <i class="fas fa-certificate"></i>
-                                <span>ZPPA Certified</span>
-                            </div>
+                            <div class="certification-item"><i class="fas fa-certificate"></i><span>PACRA Registered</span></div>
+                            <div class="certification-item"><i class="fas fa-certificate"></i><span>ZRA Compliant</span></div>
+                            <div class="certification-item"><i class="fas fa-certificate"></i><span>ZPPA Certified</span></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
@@ -183,32 +275,18 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p>
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+260953576969" class="clickable-link">+260 953 576 969</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:sales@modmordistributors.com" class="clickable-link">sales@modmordistributors.com</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>08/17 Musokotwane Road, Lusaka, Zambia</span>
-                    </p>
-                    <p>
-                        <i class="fab fa-whatsapp"></i>
-                        <a href="https://wa.me/260953576969" class="clickable-link" target="_blank">WhatsApp Chat</a>
-                    </p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+260953576969" class="clickable-link">+260 953 576 969</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:sales@modmordistributors.com" class="clickable-link">sales@modmordistributors.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span>08/17 Musokotwane Road, Lusaka, Zambia</span></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/260953576969" class="clickable-link" target="_blank" rel="noopener">WhatsApp Chat</a></p>
                 </div>
-
                 <div class="footer-section">
-                    <h4>Legal & Compliance</h4>
+                    <h4>Legal &amp; Compliance</h4>
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
                     </ul>
                     <div class="business-info">
                         <h4>Business Hours</h4>
@@ -218,14 +296,21 @@
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; <span id="currentYear">2025</span> MODMOR DISTRIBUTORS LIMITED. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/260953576969" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script defer src="js/script.js"></script>
 </body>
 
 </html>

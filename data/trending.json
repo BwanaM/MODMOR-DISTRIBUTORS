@@ -1,0 +1,94 @@
+{
+  "heading": {
+    "eyebrow": "🔥 Trending Now",
+    "title": "Most Requested This Month",
+    "subtitle": "Popular products moving fast across our Lusaka, Chinsali, and Kasama branches."
+  },
+  "filters": [
+    { "key": "all",          "label": "All Products" },
+    { "key": "construction", "label": "Construction" },
+    { "key": "healthcare",   "label": "Healthcare" },
+    { "key": "lab",          "label": "Laboratory" },
+    { "key": "general",      "label": "General" }
+  ],
+  "products": [
+    {
+      "name": "Portland Cement (50kg)",
+      "category": "construction",
+      "categoryLabel": "Construction",
+      "image": "images/products/cement.jpg",
+      "fallbackIcon": "fa-hard-hat",
+      "description": "High-grade cement for structural and finishing work. Bulk pricing available.",
+      "rating": "4.9",
+      "badge": "trending",
+      "badgeText": "Trending",
+      "stock": "In Stock",
+      "link": "contact.html"
+    },
+    {
+      "name": "PPE Kit Bundle",
+      "category": "healthcare",
+      "categoryLabel": "Healthcare",
+      "image": "images/products/ppe-kit.jpg",
+      "fallbackIcon": "fa-first-aid",
+      "description": "Complete personal protective equipment kits for clinics and hospitals.",
+      "rating": "5.0",
+      "badge": "new",
+      "badgeText": "New",
+      "stock": "In Stock",
+      "link": "contact.html"
+    },
+    {
+      "name": "Digital Lab Microscope",
+      "category": "lab",
+      "categoryLabel": "Laboratory",
+      "image": "images/products/microscope.jpg",
+      "fallbackIcon": "fa-flask",
+      "description": "High-resolution digital microscope for research and diagnostic labs.",
+      "rating": "4.8",
+      "badge": "trending",
+      "badgeText": "Trending",
+      "stock": "In Stock",
+      "link": "contact.html"
+    },
+    {
+      "name": "Bulk Office Supplies",
+      "category": "general",
+      "categoryLabel": "General",
+      "image": "images/products/office-supplies.jpg",
+      "fallbackIcon": "fa-warehouse",
+      "description": "Stationery, paper, and essential consumables for offices and schools.",
+      "rating": "4.7",
+      "badge": "trending",
+      "badgeText": "Trending",
+      "stock": "In Stock",
+      "link": "contact.html"
+    },
+    {
+      "name": "Power Tool Set",
+      "category": "construction",
+      "categoryLabel": "Construction",
+      "image": "images/products/power-tools.jpg",
+      "fallbackIcon": "fa-tools",
+      "description": "Professional-grade power tools for contractors and construction firms.",
+      "rating": "4.9",
+      "badge": "new",
+      "badgeText": "New",
+      "stock": "In Stock",
+      "link": "contact.html"
+    },
+    {
+      "name": "Lab Reagents Bundle",
+      "category": "lab",
+      "categoryLabel": "Laboratory",
+      "image": "images/products/reagents.jpg",
+      "fallbackIcon": "fa-vials",
+      "description": "Assorted chemical reagents for analytical and clinical laboratory use.",
+      "rating": "4.8",
+      "badge": "trending",
+      "badgeText": "Trending",
+      "stock": "In Stock",
+      "link": "contact.html"
+    }
+  ]
+}

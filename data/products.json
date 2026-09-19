@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "key": "construction",
+      "title": "Construction & Hardware",
+      "description": "High-quality materials and tools for your construction projects.",
+      "icon": "fa-hard-hat",
+      "items": [
+        { "name": "Portland Cement (50kg)", "image": "images/products/cement.jpg", "fallbackIcon": "fa-cube", "rating": "4.9", "badge": "trending", "badgeText": "Trending" },
+        { "name": "Steel Reinforcement Bars", "image": "images/products/steel-bars.jpg", "fallbackIcon": "fa-bars", "rating": "4.8", "badge": "", "badgeText": "" },
+        { "name": "Plumbing Fittings Set", "image": "images/products/plumbing.jpg", "fallbackIcon": "fa-faucet", "rating": "4.7", "badge": "", "badgeText": "" },
+        { "name": "Power Tool Set", "image": "images/products/power-tools.jpg", "fallbackIcon": "fa-tools", "rating": "4.9", "badge": "new", "badgeText": "New" },
+        { "name": "Safety Helmets (Bulk)", "image": "images/products/helmets.jpg", "fallbackIcon": "fa-helmet-safety", "rating": "4.8", "badge": "", "badgeText": "" },
+        { "name": "Nails & Fasteners Kit", "image": "images/products/fasteners.jpg", "fallbackIcon": "fa-screwdriver", "rating": "4.6", "badge": "", "badgeText": "" }
+      ]
+    },
+    {
+      "key": "healthcare",
+      "title": "Healthcare Supplies",
+      "description": "Reliable medical supplies for healthcare facilities and professionals.",
+      "icon": "fa-first-aid",
+      "items": [
+        { "name": "PPE Kit Bundle", "image": "images/products/ppe-kit.jpg", "fallbackIcon": "fa-first-aid", "rating": "5.0", "badge": "trending", "badgeText": "Trending" },
+        { "name": "Surgical Gloves (Box)", "image": "images/products/gloves.jpg", "fallbackIcon": "fa-hand", "rating": "4.9", "badge": "", "badgeText": "" },
+        { "name": "Disposable Face Masks", "image": "images/products/masks.jpg", "fallbackIcon": "fa-mask", "rating": "4.8", "badge": "", "badgeText": "" },
+        { "name": "First Aid Kit (Pro)", "image": "images/products/first-aid.jpg", "fallbackIcon": "fa-briefcase-medical", "rating": "4.9", "badge": "new", "badgeText": "New" },
+        { "name": "Syringes & Needles", "image": "images/products/syringes.jpg", "fallbackIcon": "fa-syringe", "rating": "4.7", "badge": "", "badgeText": "" },
+        { "name": "Antiseptic Solutions", "image": "images/products/antiseptic.jpg", "fallbackIcon": "fa-prescription-bottle", "rating": "4.8", "badge": "", "badgeText": "" }
+      ]
+    },
+    {
+      "key": "lab",
+      "title": "Laboratory & Scientific",
+      "description": "Advanced equipment and consumables for research and testing.",
+      "icon": "fa-flask",
+      "items": [
+        { "name": "Digital Lab Microscope", "image": "images/products/microscope.jpg", "fallbackIcon": "fa-microscope", "rating": "4.8", "badge": "trending", "badgeText": "Trending" },
+        { "name": "Lab Reagents Bundle", "image": "images/products/reagents.jpg", "fallbackIcon": "fa-vials", "rating": "4.8", "badge": "", "badgeText": "" },
+        { "name": "Glassware Set", "image": "images/products/glassware.jpg", "fallbackIcon": "fa-flask", "rating": "4.7", "badge": "", "badgeText": "" },
+        { "name": "pH Meter (Digital)", "image": "images/products/ph-meter.jpg", "fallbackIcon": "fa-gauge", "rating": "4.9", "badge": "new", "badgeText": "New" },
+        { "name": "Centrifuge Machine", "image": "images/products/centrifuge.jpg", "fallbackIcon": "fa-fan", "rating": "4.8", "badge": "", "badgeText": "" },
+        { "name": "Petri Dishes (Pack)", "image": "images/products/petri-dishes.jpg", "fallbackIcon": "fa-circle-notch", "rating": "4.6", "badge": "", "badgeText": "" }
+      ]
+    },
+    {
+      "key": "general",
+      "title": "General Wholesale",
+      "description": "Essential supplies for offices, schools, and businesses.",
+      "icon": "fa-warehouse",
+      "items": [
+        { "name": "Bulk Office Supplies", "image": "images/products/office-supplies.jpg", "fallbackIcon": "fa-warehouse", "rating": "4.7", "badge": "trending", "badgeText": "Trending" },
+        { "name": "A4 Paper (Carton)", "image": "images/products/a4-paper.jpg", "fallbackIcon": "fa-copy", "rating": "4.9", "badge": "", "badgeText": "" },
+        { "name": "Cleaning Supplies Kit", "image": "images/products/cleaning.jpg", "fallbackIcon": "fa-spray-can", "rating": "4.7", "badge": "", "badgeText": "" },
+        { "name": "School Stationery Pack", "image": "images/products/stationery.jpg", "fallbackIcon": "fa-pencil", "rating": "4.8", "badge": "new", "badgeText": "New" },
+        { "name": "Food Products Bundle", "image": "images/products/food.jpg", "fallbackIcon": "fa-utensils", "rating": "4.6", "badge": "", "badgeText": "" },
+        { "name": "Packaging Materials", "image": "images/products/packaging.jpg", "fallbackIcon": "fa-box", "rating": "4.7", "badge": "", "badgeText": "" }
+      ]
+    }
+  ]
+}

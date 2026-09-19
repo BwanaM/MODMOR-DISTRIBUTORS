@@ -1,0 +1,28 @@
+{
+  "heading": {
+    "eyebrow": "Client Voices",
+    "title": "Trusted by Businesses Nationwide",
+    "subtitle": "Real feedback from organisations we've supplied across Zambia."
+  },
+  "emptyMessage": "Client testimonials coming soon. We're collecting feedback from our partners across Zambia.",
+  "testimonials": [
+    {
+      "quote": "We source all our clinic's PPE and medical supplies through MODMOR. Quality is always consistent.",
+      "name": "Grace Ngoma",
+      "role": "Clinic Administrator, Kasama",
+      "avatar": "GN"
+    },
+    {
+      "quote": "MODMOR has been our go-to supplier for construction materials for two years. Their delivery times are unmatched and their pricing is consistently fair.",
+      "name": "John Mwansa",
+      "role": "Site Manager, Lusaka",
+      "avatar": "JM"
+    },
+    {
+      "quote": "As a research lab, reliability matters. MODMOR's compliance credentials and ZPPA registration give us confidence in every order we place.",
+      "name": "Dr. Chanda Tembo",
+      "role": "Research Lead, Lusaka",
+      "avatar": "CT"
+    }
+  ]
+}

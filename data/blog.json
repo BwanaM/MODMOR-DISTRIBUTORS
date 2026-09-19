@@ -1,0 +1,45 @@
+{
+  "heading": {
+    "eyebrow": "News & Insights",
+    "title": "Latest from MODMOR",
+    "subtitle": "Industry news, product updates, and distribution insights from across Zambia."
+  },
+  "posts": [
+    {
+      "id": "post-001",
+      "title": "MODMOR Expands Supply to Northern Province",
+      "date": "2025-09-15",
+      "author": "MODMOR Team",
+      "category": "Company News",
+      "excerpt": "Our Chinsali and Kasama branches now serve more communities across Northern and Muchinga provinces with faster delivery times.",
+      "image": "images/blog/northern-expansion.jpg",
+      "fallbackIcon": "fa-truck",
+      "tags": ["expansion", "logistics"],
+      "content": "<p>We are proud to announce expanded operations across Northern and Muchinga provinces. Our Chinsali and Kasama branches now deliver to more districts with reduced lead times.</p><h2>What This Means for Clients</h2><ul><li>Faster delivery windows (24–48h in major towns)</li><li>Expanded product range available locally</li><li>Dedicated branch contacts for account management</li></ul><p>Contact our branch teams to learn more.</p>"
+    },
+    {
+      "id": "post-002",
+      "title": "Understanding ZPPA Registration for Suppliers",
+      "date": "2025-09-01",
+      "author": "MODMOR Compliance Team",
+      "category": "Compliance",
+      "excerpt": "A quick guide for businesses looking to register with the Zambia Public Procurement Authority.",
+      "image": "images/blog/zppa-guide.jpg",
+      "fallbackIcon": "fa-file-contract",
+      "tags": ["zppa", "compliance"],
+      "content": "<h2>What is ZPPA?</h2><p>The Zambia Public Procurement Authority (ZPPA) regulates all public procurement in the country.</p><h2>Why Register?</h2><p>Being ZPPA-registered opens doors to government tenders and public sector contracts.</p><ul><li>Access to public sector contracts</li><li>Enhanced credibility</li><li>Formal compliance status</li></ul><h2>MODMOR's Experience</h2><p>We've been ZPPA-certified and supply to public institutions under multiple registered categories.</p>"
+    },
+    {
+      "id": "post-003",
+      "title": "New Healthcare Supply Line Now Available",
+      "date": "2025-08-20",
+      "author": "MODMOR Sales",
+      "category": "Products",
+      "excerpt": "We've added a wider range of medical disposables, PPE, and first aid kits to our catalogue.",
+      "image": "images/blog/healthcare-line.jpg",
+      "fallbackIcon": "fa-first-aid",
+      "tags": ["healthcare", "new products"],
+      "content": "<p>Our healthcare division now stocks a broader range of medical supplies for clinics, hospitals, and pharmacies across Zambia.</p><h2>New Additions</h2><ul><li>Expanded PPE kits</li><li>Surgical gloves (bulk packaging)</li><li>Disposable face masks</li><li>Professional first aid kits</li></ul><p>Request a quote through our contact page for pricing.</p>"
+    }
+  ]
+}
